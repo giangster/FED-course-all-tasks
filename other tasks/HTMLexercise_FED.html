@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1</title>
+    <style>
+        input {
+            width: 97%;
+            padding: 4px;
+            margin: 10px;
+        }
+        select {
+            width: 95%;
+            padding: 4px;
+            margin: 10px 10px;
+        }
+        </style>
+</head>
+
+<body>
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+        First Name<br>
+        <input type="text" name="firstname" value="John">
+        <br>
+        Last Name<br>
+        <input type="text" name="lastname" value="Johnson">
+        <br>
+        Date of Birth<br>
+        <input type="date" name="birthday" value="2017-06-01">
+        <br>
+        Gender<br>
+        <select>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="secret">I'd rather not say</option>
+        </select>
+        <br>
+        Email<br>
+        <input type="email" name="email" value="j.johnson@gmail.com">
+        <br>
+        Homepage<br>
+        <input type="text" name="homepage" value="www.johnjohnsons.com">
+        <br>
+        Favorite Color<br>
+        <input type="color" name="favcolor" value="#3fff00">
+        <br><br>
+        <button>Save</button>
+    </form>
+
+</body>
+
+</html>

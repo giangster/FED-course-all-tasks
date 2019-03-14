@@ -1,0 +1,57 @@
+body {
+    background-image: url("white-waves.png");
+    background-repeat: repeat;
+}
+.navitem {
+    width: 20%;
+    padding: 5px;
+    margin: 3px;
+    border: solid 0.5px darkblue;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.article {
+    padding: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid 0.5px darkblue;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+
+}
+
+h1 {
+    color: red;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+figcaption {
+    color: darkblue;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li {
+    list-style-type: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <title>Datatables</title>
+</head>
+
+<body>
+    <div>
+        <table id="table_id" class="display">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody id="body" />
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.getJSON("https://jsonplaceholder.typicode.com/todos", function (data) {
+                console.log(data);
+                var items = [];
+                $.each(data, function (id, title, completed) {
+                    for (i = 0; i < data.length; i++) {
+                        items.push("<tr>" + "<td>" + data[i].id + "</td>" + "<td>" + data[i].title + "</td>" + "<td>" + data[i].completed + "</td>" + "</tr>");
+                    }
+                });
+
+                $("<tbody/>", {
+                    html: items.join("")
+                }).appendTo("#body");
+            });
+
+
+            $('#table_id').DataTable();
+        });
+    </script>
+
+</body>
+<script>
+
+
+</html >

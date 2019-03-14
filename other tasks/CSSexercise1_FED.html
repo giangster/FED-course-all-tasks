@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Exercise 3</title>
+    <style>
+        td,
+        th {
+            border-bottom: 1px solid lightgrey;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightskyblue;
+        }
+
+        #table1 {
+            width: 95%;
+        }
+
+        .img {
+            margin: 10px;
+            width: 30%;
+            height: 150px;
+            border: solid red 0.5px;
+            display: inline-block;
+        }
+
+        #main {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flexcat {
+            margin: 2%;
+            padding: 2%;
+            border: solid lightgrey 0.5px;
+            line-height: 20px;
+            width: 20%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 10%;
+                margin-right: 10%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .flexcat {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table id="table1">
+            <tr>
+                <th>Studentnumber</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+            <tr>
+                <td>a11221</td>
+                <td>John</td>
+                <td>Williams</td>
+            </tr>
+            <tr>
+                <td>a12213</td>
+                <td>Carry</td>
+                <td>Millis</td>
+            </tr>
+            <tr>
+                <td>a12301</td>
+                <td>Laura</td>
+                <td>Palmer</td>
+            </tr>
+        </table>
+    </div>
+    <div id="imggallery">
+        <h1>Image gallery</h1>
+        <div class="img" id="1">
+            <p>This is the first image</p>
+        </div>
+        <div class="img" id="2">
+            <p>This is the second image</p>
+        </div>
+        <div class="img" id="3">
+            <p>This is the third image</p>
+        </div>
+        <div class="img" id="4">
+            <p>This is the fourth image</p>
+        </div>
+        <div class="img" id="5">
+            <p>This is the fifth image</p>
+        </div>
+    </div>
+
+    <div>
+        <h1>Using Flexbox</h1>
+        <div>
+            <div id="main">
+                <div class="flexcat">
+                    <p>Some cats like to play with plastic</p>
+                </div>
+                <div class="flexcat">
+                    <p>Other cats prefer to just sit in the box</p>
+                </div>
+                <div class="flexcat">
+                    <p>Meanwhile some of them just sleep all the time</p>
+                </div>
+                <div class="flexcat">
+                    <p>But in the end they are so fluffy</p>
+                </div>
+                <div class="flexcat">
+                    <p>And irresistibly cute</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
