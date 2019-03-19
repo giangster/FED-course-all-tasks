@@ -1,0 +1,133 @@
+.page {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+}
+.nav-item {
+  margin: 0;
+  float: left;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar-container {
+    background-color: rgb(180, 76, 76);
+    width: 100%;
+    height: 100px;
+  }
+
+  #nav {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0); */
+    width: 100%;
+  }
+
+  .nav-item {
+    background-color: black;
+  }
+}
+x .nav-item a:link {
+  padding: 12px 12px;
+  text-decoration: none;
+}
+.nav-item a:hover {
+  background-color: rgb(216, 152, 163);
+  padding: 12px 16px;
+}
+.nav-item a:visited {
+  color: rgb(255, 255, 255);
+}
+#nav {
+  float: left;
+  background-color: transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  background-blend-mode: soft-light;
+}
+
+.navbar-container {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+}
+
+.main {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.main-item {
+  background-color: #c2eaba;
+  background-image: linear-gradient(
+    319deg,
+    #c2eaba 0%,
+    #c5f4e0 37%,
+    #efc2cf 100%
+  );
+
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgb(58, 58, 58);
+}
+
+.main-item em {
+  font-weight: bold;
+}
+
+.main a {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(58, 58, 58);
+  background-color: #cdedfd;
+  background-image: linear-gradient(
+    319deg,
+    #cdedfd 0%,
+    #ffec82 37%,
+    #ffcfd2 100%
+  );
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgb(201, 151, 159), 0 1px 2px rgb(201, 151, 159);
+}
+
+.main a:hover {
+  background-color: #faa499;
+  background-image: linear-gradient(
+    319deg,
+    #faa499 0%,
+    #f7dd85 37%,
+    #ffc55c 100%
+  );
+}
+
+.main dd {
+  padding: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-size: large;
+  padding: 25px;
+  text-align: justify;
+}
